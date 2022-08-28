@@ -4,7 +4,14 @@
     <string name="description">Ingresa tu correo</string>
     <string name="dude">¿Nuevo Usuario? !Crea tu cuenta aquí!</string>
     <string name="inicio">Iniciar sesión</string>
-    <string name="wenas"></string>
+    <string name="wenas">¡Buenos días!</string>
+    <string name="actualizar">Actualizar perfil</string>
+    <string name="saludo">hi</string>
+    <string name="profile">Mi perfil</string>
+    <string name="act">Actualizar</string>
+    <string name="neww">Nueva cuenta</string>
+    <string name="crear">Crear cuenta</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
