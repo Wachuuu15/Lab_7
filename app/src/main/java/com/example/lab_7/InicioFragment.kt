@@ -1,5 +1,6 @@
 package com.example.lab_7
 
+
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -16,7 +17,6 @@ class InicioFragment : Fragment(R.layout.fragment_inicio) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
         buttonInicio = view.findViewById(R.id.button)
         inputLayoutEmail = view.findViewById(R.id.editTextTextEmailAddress)
 
@@ -25,7 +25,7 @@ class InicioFragment : Fragment(R.layout.fragment_inicio) {
 
     private fun setListeners() {
         buttonInicio.setOnClickListener{
-            requireView().findNavController().navigate(R.id.action_homeFragment_to_userProfile)
+            requireView().findNavController().navigate(R.id.action_inicioFragment_to_homeFragment)
         }
     }
 

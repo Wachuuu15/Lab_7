@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".UserProfile">
 
-
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/editTextTextEmailAddress2"
         android:layout_width="292dp"
         android:layout_height="45dp"
@@ -20,7 +19,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <ImageView
         android:id="@+id/imageView2"
