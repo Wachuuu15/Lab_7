@@ -24,7 +24,7 @@ class CreateAccountFragment : Fragment(R.layout.fragment_create_count) {
         buttoncreate.setOnClickListener{
             requireView().findNavController().navigate(
                CreateAccountFragmentDirections.actionCreateAccountFragmentToHomeFragment(
-                   email = inputEmail.editText!!.toString()
+                   email = inputEmail.editText!!.text.toString()
                )
             )
         }
