@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateCount">
+    tools:context=".CreateAccountFragment">
 
 
     <TextView
@@ -22,16 +22,15 @@
         app:layout_constraintVertical_bias="0.124" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="279dp"
-        android:layout_height="54dp"
-        android:layout_marginBottom="240dp"
+        android:id="@+id/buttoncreatecuenta"
+        android:layout_width="297dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="256dp"
         android:backgroundTint="@color/naranja"
         android:text="@string/crear"
         android:textColor="#FFFEFE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="TextContrastCheck" />
 
@@ -42,20 +41,31 @@
         android:orientation="vertical"
         app:layout_constraintGuide_begin="20dp" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress3"
-        android:layout_width="285dp"
-        android:layout_height="51dp"
-        android:ems="10"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="335dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="28dp"
+        android:autofillHints="emailAddress"
+        android:ems="12"
         android:hint="@string/description"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        android:textColor="#0E0C0C"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.565"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.798"
-        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.324">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="323dp"
+            android:layout_height="58dp"
+            android:layout_marginBottom="24dp"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

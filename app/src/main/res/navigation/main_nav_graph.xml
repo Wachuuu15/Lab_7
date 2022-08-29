@@ -10,39 +10,46 @@
         android:name="com.example.lab_7.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
+
         <action
-            android:id="@+id/action_homeFragment_to_userProfile"
-            app:destination="@id/userProfile" />
+            android:id="@+id/action_homeFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+        <argument
+            android:name="email"
+            app:argType="string" />
     </fragment>
     <fragment
-        android:id="@+id/createCount"
-        android:name="com.example.lab_7.CreateCount"
+        android:id="@+id/CreateAccountFragment"
+        android:name="com.example.lab_7.CreateAccountFragment"
         android:label="fragment_create_count"
         tools:layout="@layout/fragment_create_count" >
         <action
-            android:id="@+id/action_createCount_to_homeFragment"
+            android:id="@+id/action_CreateAccountFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/userProfile"
-        android:name="com.example.lab_7.UserProfile"
-        android:label="fragment_user_profile"
-        tools:layout="@layout/fragment_user_profile" >
-        <action
-            android:id="@+id/action_userProfile_to_inicioFragment"
-            app:destination="@id/inicioFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/inicioFragment"
         android:name="com.example.lab_7.InicioFragment"
         android:label="fragment_inicio"
-        tools:layout="@layout/fragment_inicio" >
+        tools:layout="@layout/fragment_inicio">
+
         <action
             android:id="@+id/action_inicioFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+
         <action
-            android:id="@+id/action_inicioFragment_to_createCount2"
-            app:destination="@id/createCount" />
+            android:id="@+id/action_inicioFragment_to_CreateAccountFragment"
+            app:destination="@id/CreateAccountFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.lab_7.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" >
+        <action
+            android:id="@+id/action_userProfileFragment_to_inicioFragment"
+            app:destination="@id/inicioFragment" />
     </fragment>
 </navigation>
