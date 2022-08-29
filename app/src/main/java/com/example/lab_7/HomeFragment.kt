@@ -23,7 +23,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         buttonactualizar = view.findViewById(R.id.button2)
         textHome = view.findViewById(R.id.textView4)
         textHome.text= args.email
-
         setListeners()
     }
 

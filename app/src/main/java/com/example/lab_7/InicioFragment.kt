@@ -1,6 +1,7 @@
 package com.example.lab_7
 
 
+import android.os.Binder
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -16,6 +17,7 @@ class InicioFragment : Fragment(R.layout.fragment_inicio) {
     private lateinit var inputLayoutEmail: TextInputLayout
     private lateinit var textclick : TextView
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -29,7 +31,7 @@ class InicioFragment : Fragment(R.layout.fragment_inicio) {
     private fun setListeners() {
         buttonInicio.setOnClickListener{
             val action = InicioFragmentDirections.actionInicioFragmentToHomeFragment(
-                email = inputLayoutEmail.editText!!.toString()
+                email = inputLayoutEmail.editText!!.text.toString()
             )
             requireView().findNavController().navigate(action)
         }

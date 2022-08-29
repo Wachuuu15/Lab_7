@@ -8,12 +8,14 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/editTextTextEmailAddress2"
-        android:layout_width="292dp"
-        android:layout_height="45dp"
+        android:layout_width="335dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="32dp"
         android:layout_marginBottom="264dp"
         android:autofillHints="emailAddress"
         android:ems="10"
         android:hint="@string/inicio"
+        app:startIconDrawable="@drawable/ic_baseline_alternate_email_24"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,7 +25,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="52dp"
             tools:ignore="TextContrastCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
